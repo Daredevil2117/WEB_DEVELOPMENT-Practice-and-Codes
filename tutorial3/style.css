@@ -76,8 +76,18 @@
     position: relative;
     top:100px;   
     left:100px;
-
 }
+
+.seven {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top:100px;
+    right:0px;
+    
+}
+
 
 .six{
     width:200px;
@@ -88,14 +98,24 @@
     right:0px;
 }
 
-.seven {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    position: absolute;
-    top:100px;
-    right:0px;
+.eight{
+    width: 300px;
+    height: 200px;
+    border: 10px solid black;
+    background-color: green;
+    position: relative;
+    top: 100px;
+    z-index: 10;
 }
+.nine{
+    width: 300px;
+    height: 200px;
+    border: 10px solid black;
+    background-color: blue;
+    position: relative;
+    z-index: 1;
+}
+
 
 .form {
     width:700px;
