@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* 1. Css Selectors  */
+/* h1{
+    font-size: 20px;
+    background-color: blue;
+
+} */
+
+
+*{
+    font-family: 'Playfair Display', serif;
+}
+h1, h2 {
+    background-color: bisque;
+}
+
+div h1{
+    background-color: orange;
+}
+
+h1.one{
+    background-color: aqua;
+}
+
+
+/* styling of text  */
+
+h1{
+    color:rgb(101, 98, 181);
+    background-color: rgb(196, 255, 214);
+    text-align: center;
+    /* text-align:right; */
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-shadow: 3px 3px white;
+}
+
+.xyz{
+    text-align-last:auto;
+    text-indent: 50px;
+    line-height: 2;
+    /* word-spacing: 15px; 
+    letter-spacing: 10px; */
+}
+
+
+
+h2{
+    text-decoration-line: underline;
+    text-decoration-line: line-through;
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+
+/* pseudo selector  */
+/* a{
+    color: brown;
+} */
+
+
+a{
+    text-decoration:none;
+}
+
+a:link{
+    color:red;
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    color: orange;
+}
+
+a:active{
+    color: pink;
+}
+
+
+ul{
+    list-style-type:disc;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+table{
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th {
+    border: 1px solid black;
+    border-bottom: 0;
+    height: 50px;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+span{
+     background-color: aqua;
+     width:200px;
+}
+
+h3{
+    display: inline;
+    background-color: green;
+    height:200px;
+
+}
+
+
+
+
