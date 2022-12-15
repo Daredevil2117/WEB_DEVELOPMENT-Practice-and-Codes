@@ -1,0 +1,63 @@
+:root{
+    --varone:blue;
+
+}
+
+.one{
+    height:500px;
+    width:1200px;
+    background-color: var(--varone);
+}
+
+/* @media (min-width:640px) and (max-width:767px){ */
+@media (min-width:640px) {
+    .one{
+        width:400px;
+        background-color: red;
+    }
+}
+
+@media (min-width:768px){
+    .one{
+        width:600px;
+        background-color: green;
+    }
+}
+
+@media (min-width:1024px){
+    .one{
+        width:800px;
+        background-color: yellow;
+    }
+}
+@media (min-width:1200px){
+    .one{
+        width:1000px;
+        background-color: black;
+
+    }
+}
+
+.two{
+    width:200px;
+    height:200px;
+    background-color: red;
+    float: left;
+    
+}
+.three{
+    width:200px;
+    height:300px;
+    background-color: green;
+    float:right;
+
+}
+/* .four{
+    width:200px;
+    height:400px;
+    background-color: blue;
+    float:left;
+} */
+
+
+

@@ -1,0 +1,37 @@
+#outerframe{
+    width:400px;
+    height:800px;
+    border: 1px solid black;
+}
+
+#innerframe{
+    height:780px;
+    width:380px;
+    margin:auto;
+    margin-top: 10px;
+    background-color: rgb(190, 243, 110);
+}
+
+.partone{
+    padding: 2px 10px;
+}
+
+.one{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+label, input{
+    display: inline-block;
+}
+
+label{
+    width: 30%;
+    font-weight: 800;
+}
+
+input{
+    width: 55%;
+    margin:10px 0px;
+}
