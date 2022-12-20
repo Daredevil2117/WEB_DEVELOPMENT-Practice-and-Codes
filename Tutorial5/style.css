@@ -1,0 +1,169 @@
+p{
+    /* font-size: 2cm; */
+    font-size: 2em;
+    font-size: 3rem;
+    font-size: 10vw;
+    font-size: 10vh;
+    font-size:18px;   
+}
+
+.one{
+    background-color: red;
+}
+
+
+p#one{
+    background-color: black;
+}
+
+
+#one{
+    background-color: green;
+}
+
+p{
+    width:200px;
+    height:200px;
+    background-color: aqua !important;
+}
+
+p.one{
+    background-color: blue;
+}
+
+img{
+    opacity: 0.7;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+/* priority order{ id>class>tag} */
+
+/* (total count = element:01, class:10, id:100) */
+
+
+.two{
+    width: 700px;
+    height:300px;
+    /* background-color: rgb(255, 0, 255);  */
+    /* (0,255) */
+    /* background-color: #9e5099; */
+    
+    background: linear-gradient(to right,red,green);
+    background: linear-gradient(70deg,red,green, blue);
+}
+.three{
+    width: 700px;
+    height:300px;
+    background: radial-gradient(circle,yellow 50%, aqua)
+}
+
+/* transformations  */
+
+.four{
+    width: 300px;
+    height:300px;
+    background-color: red;
+    transform: skewX(30deg);
+    transform: skewY(30deg);
+    transform: skew(30deg, 30deg);
+}
+
+.five{
+    width: 300px;
+    height:300px;
+    background-color: green;
+    margin-top: 100px;
+    /* transform: scaleX(2);
+    transform: scaleY(0.5);
+    transform: scale(1.5,0.7); */
+    /* transform: translate(100px,100px); */
+    transform: scaleX(2) translate(100px,100px);
+    /* transform: rotate(-30deg); */
+    transform: rotateX(30deg);
+    transform: rotateY(30deg);
+    transform: rotateZ(30deg);
+}
+
+/* transitions  */
+
+.six{
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    background-color: aqua;
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+
+
+.six:hover{
+    background-color: yellow;
+}
+
+.seven{
+    width:300px;
+    height:300px;
+    background-color: blueviolet;
+    position: relative;
+    /* animation-name: demo; */
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes demo {
+    0%{
+        background-color: blueviolet;
+        top:0;
+        left:0;
+    }
+
+    25%{
+        background-color: aqua;
+        top:0;
+        left:200px;
+    }
+    50%{
+        background-color: yellow;
+        top:200px;
+        left:200px;
+    }
+    75%{
+        background-color: red;
+        top:200px;
+        left:0px;
+    }
+    100%{
+        background-color: blueviolet;
+        left:0;
+        top:0;
+    }
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.demo{
+    color: white;
+    background-color: black;
+    padding: 50px;
+    margin-left:50px;
+}
+
+
+
+
+
+
