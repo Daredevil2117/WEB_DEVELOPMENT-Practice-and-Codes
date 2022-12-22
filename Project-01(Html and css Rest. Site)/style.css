@@ -1,0 +1,195 @@
+*{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+ul li{
+    display: inline-block;
+    padding: 0rem 2rem;
+ }
+
+ header{
+    position: fixed;
+    top:0px;left:0px;right:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgb(158, 245, 120);
+    padding: 1rem 10%;
+
+ }
+
+ .btn{
+    border: none;
+    padding: 5px 5px;
+    background-color: rgb(242,109,109);
+ }
+
+ .fa-bars{
+    border: 1px solid black;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 4px 8px;
+    display: none;
+ }
+
+ .home{
+    display: flex;
+    align-items: center;
+    background-image: url('resources/img5.jpeg') ;
+    max-height:600px;
+    padding: 1rem 2rem;
+ }
+
+ .info{
+    max-width: 49%;
+    padding: 10rem 0;
+ }
+
+ h2{
+    font-size: 2rem;
+    padding: 2rem 0;
+ }
+
+ .desc{
+    padding: 2rem 0;
+ }
+
+ .tablebook{
+    border: 1px solid black;
+    border-radius: 15px;
+    width:fit-content;
+    background-color: rgb(158, 245, 120);
+    font-size: 25px;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    cursor: pointer;
+ }
+
+ .tablebook:hover{
+    background-color: rgb(249, 249, 117);
+ }
+
+ .pic{
+    max-width: 49%;
+ }
+
+ .pic img{
+   width:95%;
+    
+ }
+
+ #about{
+    min-height: 400px;
+    padding: 5rem 0;
+ }
+
+ .about{
+    display: flex;
+ }
+
+ .aboutimg{
+    width:49%;
+    padding: 0 2rem;
+
+ }
+
+ .aboutdesc{
+    width:49%;
+    padding:0 2rem ;
+ }
+
+ h1,h2{
+    text-align: center;
+ }
+
+ .aboutdesc p{
+    padding: 2rem 0;
+    text-align: justify;
+ }
+
+ footer{
+    background-color: rgb(11,11,19);
+    color: white;
+ }
+
+ .footcontent{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .myicons i {
+    display: block;
+    padding: 1rem 1rem;
+ }
+
+ .myaddress{
+    width:50%
+ }
+ 
+
+ .right{
+    padding: 2rem 0;
+    text-align: center;
+ }
+
+
+ @media (max-width:991px) {
+
+    
+ }
+ @media (max-width:768px) {
+      .fa-bars{
+        display: block;
+      }
+
+      .navbar{
+        display: none;
+      }
+
+      .home{
+        display: block;
+      }
+
+      .info{
+        max-width:100%
+      }
+
+      .pic{
+        display: none;
+      }
+      .about{
+        display: block
+     }
+
+     .aboutimg{
+        text-align: center;
+        width:100%;
+        padding: 0 0;
+    
+     }
+
+     .aboutdesc{
+        width:100%;
+        padding:1rem 2rem ;
+     }
+
+     .aboutdesc p{
+        width:fit-content;
+        padding:0 0;
+        text-align:justify;
+        padding: 0 ;
+     }
+    
+ }
+
+
