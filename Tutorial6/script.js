@@ -1,3 +1,5 @@
+
+
 // data types : 
 
 // 1. number 
@@ -210,6 +212,165 @@ console.log(a);
 
 console.log(a.toString());
 
+console.log('hello');
+
+// Function ... 
+
+function myFunction(a,b){
+  return a*b;
+}
+
+console.log(myFunction(10,20));
+
+
+var myFunction = function(a,b){
+  return a+b;
+}
+
+console.log(myFunction(30,40))
+
+// Arrow Functions 
+
+
+
+var hello = (a,b) => { return a+b; }
+
+console.log(hello(10,20));
+
+// if else 
+
+var a ="hello2";
+
+if(a=='hello'){
+  console.log('yes')
+}
+
+else if(a=='hello1'){
+  console.log('yes123')
+
+}
+
+else{
+  console.log('no')
+
+}
+
+// date 
+
+var date = new Date()
+console.log(date);
+
+console.log(date.getFullYear())
+console.log(date.getMonth())  
+console.log(date.getDay())
+console.log(date.getHours())
+console.log(date.getMinutes())
+console.log(date.getSeconds())
+
+console.log(date.setFullYear(2018));
+console.log(date.setHours(14));
+console.log(date);
+
+
+var a = "+";
+var a1=10;
+var a2=20;
+var result=0;
+
+switch(a){
+  case "+" : result =a1+a2;break;
+  case "-" : result =a1-a2;break;
+  case "*" : result =a1*a2;break;
+  case "/" : result =a1/a2;break;
+  default:result=0;
+}
+
+console.log(result);
+
+// Loops 
+
+arr1=['a','b','c','d'];
+
+for(var i=0; i<arr1.length; i++){
+  console.log(arr1[i]);
+}
+
+
+// in keyword 
+
+
+for(var i in arr1){
+  console.log(arr1[i]);
+}
+
+
+for(var i of arr1){
+  console.log(i);
+}
+
+var i =0;
+
+while(i<10){
+  console.log(i);
+  i++;
+}
+
+// "use strict";
+
+// var t=['1','2','3'];
+// g=5;
+// console.log(g);
+
+// ---------------------
+
+// Hoisting 
+
+
+ x="Tejender";
+ var x;
+
+//  ------------------
+
+var arrr=['a','b','c','d'];
+
+arrr.map(function(element,index){
+  console.log(index,element);
+})
+
+arrr.map(myFunction1)
+function myFunction1(item,index){
+  console.log(index,item);
+}
+
+arrr.map((element,i)=>
+ console.log(element,i)
+)
+
+var arr9=arrr.filter((item)=> item != 'a');
+console.log(arr9);
+console.log(arrr);
+
+
+arr10=[1,2,3,4,5]
+
+ar11= arr10.map((item)=> item*item)
+console.log(ar11);
+
+arr10.forEach((item)=>console.log(item*item));
+
+
+class FindArea {
+  constructor(l,b){
+    this.l=l
+    this.b=b
+  }
+  area(){
+    return this.l*this.b
+  }
+}
+
+var t = new FindArea(20,30);
+console.log(t.area());
 
 
 
@@ -217,6 +378,9 @@ console.log(a.toString());
 
 
 
+
+
+ 
 
 
 
