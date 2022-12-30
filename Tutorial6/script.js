@@ -373,6 +373,149 @@ var t = new FindArea(20,30);
 console.log(t.area());
 
 
+var arr123=[1, 2, 3]
+var a= Array.from(arr123, item => item + item);
+console.log(a);
+
+var abc= {name:"tejender", role:"mentor"}
+
+abc.name
+abc.role
+
+// Dom 
+
+// 1. by id 
+
+var ele1 = document.getElementById('one');
+console.log(ele1);
+
+var ele2= document.getElementsByName('one');
+console.log(ele2);
+
+var ele3= document.getElementsByTagName('p');
+console.log(ele3);
+
+var ele4 = document.getElementsByClassName('one')
+console.log(ele4)
+
+var ele5= document.querySelector('.one');
+console.log(ele5)
+
+var ele6 = document.querySelectorAll('.one')
+console.log(ele6);
+
+// Specific Nodes
+
+var ele7 = document.getElementById('two');
+console.log(ele7.parentNode);
+
+var ele8 = document.getElementById('three');
+console.log(ele8.nextElementSibling)
+
+var ele9 = document.getElementById('three');
+console.log(ele9.previousElementSibling);
+
+var ele10= document.querySelector('.one');
+console.log(ele10.firstChild.nodeName);
+
+var ele11= document.querySelector('.one');
+console.log(ele11.firstElementChild);
+
+var ele12= document.querySelector('.one');
+console.log(ele12.lastElementChild);
+
+var ele13= document.querySelector('.one');
+console.log(ele13.childNodes);
+
+// Manipulating Html 
+
+
+var ele14 = document.createElement('div');
+ele14.id='sample';
+ele14.className='sample';
+ele14.textContent='hello World';
+console.log(ele14);
+
+document.body.appendChild(ele14)
+
+var ul = document.createElement('ul');
+
+var createlist=(task)=>{
+  var li= document.createElement('li');
+  li.textContent=task
+  return li
+}
+
+ul.appendChild(createlist('task1'));
+ul.appendChild(createlist('task2'));
+ul.appendChild(createlist('task3'));
+
+document.body.appendChild(ul)
+
+var ele15 = document.getElementById('one')
+console.log(ele15.textContent);
+
+var ele16 = document.getElementById('one')
+console.log(ele16.innerText);
+
+var ele17 = document.getElementById('one')
+ele17.textContent='Hello World';
+console.log(ele17);
+
+var ele18 = document.createElement('div');
+ele18.innerHTML='<p class="three">Hello <b> Everyone </b> </p>';
+
+document.body.appendChild(ele18)
+
+var p = document.querySelector('.three');
+console.log(p.innerHTML)
+console.log(p.innerText)
+
+var ele19 = document.createElement('h2');
+ele19.textContent="its feeling awesome";
+
+var ele20 = document.getElementById('five');
+ele20.before(ele19);
+
+var ele21 = document.createElement('h2');
+ele21.textContent="its feeling great";
+
+ele20.after(ele21);
+
+var ele22=document.createElement('h4');
+ele22.textContent='js is fun !!!';
+
+ele20.appendChild(ele22);
+
+var ele23=document.createElement('h4');
+ele23.textContent='js is fun  123!!!';
+
+ele20.prepend(ele23);
+
+var ele24=document.createElement('h4');
+ele24.textContent='js is fun  12345678!!!';
+
+ele20.replaceChild(ele24,ele23)
+
+var ele25 = ele13.cloneNode(true)
+console.log(ele25)
+
+ele13.removeChild(ele13.firstElementChild);
+console.log(ele13);
+
+
+ele20.setAttribute('class','five');
+ele20.removeAttribute('class');
+
+console.log(ele20.getAttribute('id'))
+console.log(ele20.hasAttribute('class'))
+
+
+
+
+
+
+
 
 
 
