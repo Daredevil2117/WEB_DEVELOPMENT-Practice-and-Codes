@@ -510,6 +510,168 @@ ele20.removeAttribute('class');
 console.log(ele20.getAttribute('id'))
 console.log(ele20.hasAttribute('class'))
 
+ele20.style.color='red';
+ele20.style.backgroundColor='aqua';
+
+ele13.className+=' addme';
+
+console.log(ele13.classList)
+
+ele13.classList.add('addme2');
+ele13.classList.remove('addme');
+ele13.classList.replace('addme2','addme3');
+ele13.classList.toggle('one');
+ele13.classList.toggle('two');
+
+console.log(ele13.classList.contains('addme3'))
+
+var ele26= ele24.getBoundingClientRect();
+console.log(ele26);
+
+var style=getComputedStyle(ele24)
+console.log(style);
+
+// Event Handling 
+
+// Event - event is an action that occurs in web browser 
+
+// mouseEvents = {mousedown, mouseup, click,  dblclick}
+
+let btn = document.getElementById('btn');
+
+// btn.addEventListener('click',display);
+
+// function display(){
+//   alert('Button is clicked');
+// }
+
+// btn.addEventListener('click',()=>{
+//   alert('Hello')
+// })
+
+
+// btn.addEventListener('click',(event)=>{
+//   console.log(event.target);
+//   alert('Hello')
+// })
+
+
+// preventDefault()
+
+// let anch = document.getElementById('google')
+
+// anch.addEventListener('click',(event)=>{
+//   console.log(event);
+//   event.preventDefault();    
+// })
+
+// backtick 
+
+var a21= 22;
+
+console.log(`The value of a is ${a21}:` )
+
+
+
+// stopPropagation()
+
+// btn.addEventListener('click',(event)=>{
+//   console.log('Hello'); 
+//   event.stopPropagation();
+// })
+
+// document.body.addEventListener('click',(event)=>{
+//   console.log("Hello 2");
+// })
+
+
+// loading unloading 
+
+addEventListener('load',()=>{
+  console.log('This page is fully loaded now !!')
+})
+
+// addEventListener('unload',()=>{
+//   console.log('This page is fully loaded now !!')
+// })
+
+
+btn.addEventListener('mousedown',()=>{
+  console.log('I am down')
+})
+
+btn.addEventListener('mouseup',()=>{
+  console.log('I am up')
+})
+btn.addEventListener('click',()=>{
+  console.log('I am Clicked')
+})
+
+// {keydown->keyup->keypress}
+document.body.addEventListener('keydown', (event)=>{
+  console.log('Key Pressed')
+  console.log(event)
+})
+
+window.addEventListener('scroll',()=>{
+  console.log('I am scrolling ')
+})
+
+
+// CallBack Functions 
+
+
+var array1=[1,2,3,4,5,6,7,8,9,10]
+
+function checker(array1,callBack){
+  var array2=[]
+  for(var i of array1){
+    if(callBack(i)){
+      array2.push(i)
+    }
+  }
+  return array2
+}
+
+
+var result = checker(array1,(number)=>{
+  return number%2==0
+})
+
+console.log(result);
+
+// SetTimeOut and SetInterval 
+
+setTimeout(()=>{
+  console.log('Print ME after some delay')
+},2500)
+
+
+// let runningClock=setInterval(runclock,1000)
+
+// var timeclock= document.getElementById('time')
+// function runclock(){
+//   const d= new Date();
+//   timeclock.innerHTML=d.toLocaleTimeString();
+// }
+
+// var stopTime= document.getElementById('tostop');
+
+// stopTime.addEventListener('click',()=>{
+//   clearInterval(runningClock)
+// })
+
+var d= new Date();
+console.log(d.toLocaleTimeString())
+
+
+
+
+
+
+
+
+
 
 
 
