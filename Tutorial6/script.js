@@ -587,9 +587,9 @@ console.log(`The value of a is ${a21}:` )
 
 // loading unloading 
 
-addEventListener('load',()=>{
-  console.log('This page is fully loaded now !!')
-})
+// addEventListener('load',()=>{
+//   console.log('This page is fully loaded now !!')
+// })
 
 // addEventListener('unload',()=>{
 //   console.log('This page is fully loaded now !!')
@@ -613,9 +613,9 @@ document.body.addEventListener('keydown', (event)=>{
   console.log(event)
 })
 
-window.addEventListener('scroll',()=>{
-  console.log('I am scrolling ')
-})
+// window.addEventListener('scroll',()=>{
+//   console.log('I am scrolling ')
+// })
 
 
 // CallBack Functions 
@@ -642,9 +642,9 @@ console.log(result);
 
 // SetTimeOut and SetInterval 
 
-setTimeout(()=>{
-  console.log('Print ME after some delay')
-},2500)
+// setTimeout(()=>{
+//   console.log('Print ME after some delay')
+// },2500)
 
 
 // let runningClock=setInterval(runclock,1000)
@@ -664,7 +664,10 @@ setTimeout(()=>{
 var d= new Date();
 console.log(d.toLocaleTimeString())
 
+// eval 
 
+console.log(eval('2+2'));
+console.log(eval('2+2*(4+4)'));
 
 
 
