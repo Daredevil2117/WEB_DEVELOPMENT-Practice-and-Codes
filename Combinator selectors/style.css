@@ -1,0 +1,19 @@
+/* div p{
+    background-color: aqua;
+} */
+/* (Dirtect child selector ) */
+
+div > p{
+    background-color: yellow;
+}
+
+/* (Adjecent following sibling selector) */
+
+div + h1{
+    background-color: green;
+}
+
+/* (general following sibling selector) */
+div ~ h1 {
+    background-color: blue;
+}
