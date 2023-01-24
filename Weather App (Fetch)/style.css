@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+#top{
+    background-color: azure;
+    width:440px;
+    padding:20px;
+}
+
+#val{
+    width:300px;
+    height:40px;
+    padding:10px;
+}
+
+#btn{
+    height:40px;
+    width:80px;
+    margin-left: 10px;
+    background-color: rgb(128, 128, 247);
+}
+
+#display{
+    width:440px;
+    margin-top:20px;
+    min-height: 250px;
+    background-color: azure;
+    text-align: center;
+}
+
+#today{
+    padding-top: 20px;
+}
+
+#temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
