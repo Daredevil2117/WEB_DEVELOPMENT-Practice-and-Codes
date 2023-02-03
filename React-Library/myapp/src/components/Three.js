@@ -30,9 +30,9 @@ export default function Three() {
     // const handleChjeckBox=()=>{
     //     setisChecked(!isChecked)
     // }
-    console.log(params.name1)
-    console.log(password)
-    console.log(isChecked)
+    // console.log(params.name1)
+    // console.log(password)
+    // console.log(isChecked)
   return (
     <>
     <div>
