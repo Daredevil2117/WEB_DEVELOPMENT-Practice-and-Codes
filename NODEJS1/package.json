@@ -1,0 +1,14 @@
+{
+  "name": "nodejs1",
+  "version": "1.0.0",
+  "description": "This is first server side file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tejender Dubey",
+  "license": "ISC",
+  "dependencies": {
+    "superheroes": "^3.0.0"
+  }
+}

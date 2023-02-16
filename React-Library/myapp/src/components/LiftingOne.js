@@ -4,7 +4,13 @@ export default function LiftingOne(props) {
     const param= props.params
     const update = props.update
 
+    const [error, setError]= useState('')
+
     const handlefirst=(event)=>{
+        if(event.target.value<8){
+            setError('This is invalid')
+
+        }
 
         update({...param,firstName:event.target.value})
 
@@ -21,6 +27,7 @@ export default function LiftingOne(props) {
                     <div className="col">
                         <input type="text" className="form-control" placeholder="First name"
                         value={param.firstName} onChange={handlefirst}/>
+                        {error}
                     </div>
                     <div className="col">
                         <input type="text" className="form-control" placeholder="Last name"
