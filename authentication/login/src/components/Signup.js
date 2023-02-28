@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
+import axios from "axios"
+import {useHistory} from "react-router-dom"
+
+
 
 export default function Signup() {
+    const history = useHistory()
+   
     const [ user , setUser] = useState({
         name:"",
         email:"",
@@ -16,9 +22,27 @@ export default function Signup() {
         })
 
     }
+  
+   const handleSignup=()=>{
+    const {name, email,password,confirmPassword } = user
+    if(name && email && password && (password===confirmPassword)){
+        axios.post("http://localhost:9000/signup" , user)
+        .then(res=>{
+            alert(res.data.message)
+            history.push('/login')
+        })
+    }
+    else{
+        alert("Invalid Parameters")
+    }
+
+
+   }
+  
+    
    
   return (
-    <form className='container'>
+    <div className='container'>
     <div className="mb-3">
         <label htmlFor="entername" className="form-label">Name</label>
         <input type="text" className="form-control" id="entername" 
@@ -38,7 +62,9 @@ export default function Signup() {
         <input type="password" className="form-control" id="exampleInputPassword2"
         name="confirmPassword" value={user.confirmPassword} onChange={handleOnChange}/>
     </div>
-    <button className="btn btn-primary">Sign Up</button>
-</form>
+    <button className="btn btn-primary" onClick={handleSignup}>Sign Up</button>
+    <div>Already a Member ?</div>
+    <button className="btn btn-primary" onClick={()=>history.push("/login")}>Log In</button>
+</div>
   )
 }

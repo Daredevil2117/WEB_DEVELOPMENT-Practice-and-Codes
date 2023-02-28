@@ -4,10 +4,10 @@ const mongoose = require('mongoose')
 const app = express()
 
 app.use(express.json())
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
-
+mongoose.set('strictQuery', false);
 mongoose.connect("mongodb://localhost:27017/authentication",{
     useNewUrlParser:true,
     useUnifiedTopology:true
@@ -28,7 +28,7 @@ app.post('/login',(req,res)=>{
     User.findOne({email:email},(err,data)=>{
         if(data){
             if(password===data.password){
-                res.send({messgae:"Successfull",user:data})
+                res.send({message:"Successfull",user:data})
             }
             else{
                 res.send({message:"Wrong Password"})
@@ -69,7 +69,7 @@ app.post('/signup',(req,res)=>{
     
 })
 
-app.listen(8000,()=>{
+app.listen(9000,()=>{
     console.log("Server Started")
 
 })
