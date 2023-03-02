@@ -1,0 +1,4 @@
+1  To Do App (edit, deletion addition)
+2. Calculator 
+3. Expense Tracking Application / Money Tracker 
+4. Fitness App / Workout Tracker
